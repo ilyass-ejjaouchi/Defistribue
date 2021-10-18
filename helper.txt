@@ -32,3 +32,5 @@ Supprimer une image docker
 docker rmi image_id
 
 https://forums.docker.com/t/unable-to-ping-container-from-host/46609
+
+docker network : option pour mettre un container en raison => bridge 

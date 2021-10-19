@@ -1,0 +1,36 @@
+Exécuter les containers docker donnée dans le ficher docker-compose.yml du répertoire courrant 
+docker-compose up
+
+Arrêter les containers docker en cours 
+docker-compose down 
+
+Liste les containers dockers lancés sur la machine 
+docker ps : 
+
+Récupèrer l'ip sur lequel est lancé le containers donné en argument de commande
+docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name_or_id 
+
+Récupèrer l'ip sur lequel est lancé le containers donné en argument de commande (ancienne version du docker client)
+docker inspect -f "{{ .NetworkSettings.IPAddress }}" container_name 
+
+Récupèrer toutes les informations de configuration d'un docker dans un objet json 
+docker inspect container_name_or_id
+
+Créer une image build avec le fichier dockerfile du répertoire courrant 
+docker build . -t <image_name> 
+
+Liste de toutes les images
+docker images
+
+Exécute l'image donnée dans un container docker
+docker run -it image_id
+
+Supprimer un container docker 
+docker rm container_id
+
+Supprimer une image docker
+docker rmi image_id
+
+https://forums.docker.com/t/unable-to-ping-container-from-host/46609
+
+docker network : option pour mettre un container en raison => bridge 

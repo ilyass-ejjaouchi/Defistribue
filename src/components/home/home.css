@@ -1,0 +1,13 @@
+.defi{
+    margin-top: 5%;
+}
+.defiItems{
+    margin-left: 2% !important;
+    margin-right: 2% !important;
+}
+.title{
+    font-size: 4.5em !important;
+}
+input:disabled{
+    cursor: not-allowed !important;
+}

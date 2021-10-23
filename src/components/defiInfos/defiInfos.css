@@ -1,0 +1,6 @@
+.card:hover{
+    transform: scale(1.1) !important;
+}
+.defiInfo{
+    margin-top: 3%;
+}

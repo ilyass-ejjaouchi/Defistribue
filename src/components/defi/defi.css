@@ -1,0 +1,13 @@
+.inputKey{
+    border-color: #2ddc81 !important;
+}
+.buttonKey{
+    background-color: #2ddc81 !important;
+    color: #101010 !important;
+}
+.header:hover{
+    color: #2ddc81 !important;
+}
+.errorMsg{
+    color: #f13d3d !important;
+}
